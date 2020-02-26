@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 视口标签 -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>MI-mobile</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet/less" type="text/css" href="./less/styles.less" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap" id="mywrap">
+            <!-- 根据路由表加载 -->
+        </div>
+        <ul class="tab" id="mytab">
+            <li class="current"><a href="#/pages/home">
+                    <i class="tab-icon"></i>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li><a href="#/pages/category">
+                    <i class="tab-icon"></i>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li><a href="#/pages/cart">
+                    <i class="tab-icon"></i>
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li><a href="#/pages/me">
+                    <i class="tab-icon"></i>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 根据设备屏幕宽度调整根标签字体大小，如果屏幕宽度为750px，则1rem = 750/10 px。宽度(px)/75 = 宽度rem -->
+    <script src="js/viewport.js"></script>
+    <!-- 引入zepto -->
+    <script src="libs/zepto/zepto.js"></script>
+    <script src="libs/zepto/touch.js"></script>
+    <!-- 引入swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- 引入项目js -->
+    <script src="js/mi.js"></script>
+</body>
+
+</html>

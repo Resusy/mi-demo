@@ -1,0 +1,355 @@
+@charset 'utf-8';
+// 主色
+@base-color: #ff6b00;
+
+html, body {
+    height:100%;
+}
+
+.container {
+    height: 100%;
+    .wrap {
+        padding-bottom: 108/75rem;
+
+        //头部
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+            height: 102/75rem;
+            background-color: #fafafa;
+            box-sizing: border-box;
+            padding-top:14/75rem;
+            display: flex;
+            .logo {
+                font-size: 0;
+                a {
+                    display: inline-block;
+                    box-sizing: border-box;
+                    padding-top: 10/75rem;
+                    width: 105/75rem;
+                    height: 58/75rem;
+                    height: auto;
+                    text-align: center;
+                    //background-color: red;
+                    img {
+                        width: 52/75rem;
+                    }
+                }
+        
+            }
+            .search-box {
+                height: 58/75rem;
+                border: 1px #dedede solid;
+                box-sizing: border-box;
+                padding-left: 26/75rem;
+                border-radius: 10/75rem;
+                flex: 1;
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                .search-icon {
+                    width: 26/75rem;
+                    height: 26/75rem;
+                    
+                }
+                input {
+                    width: 90%;
+                    border: 0;
+                    padding-left: 10/75rem;
+                    outline: none;
+                    // background-color: red;
+                    font-size: 26/75rem;
+                    color: #333;
+                    &::placeholder {
+                        color: #d6d6d6;
+                        font-size: 26/75rem;
+                    }
+                }
+            }
+            .login {
+                width: 100/75rem;
+                height: 58/75rem;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                button {
+                    width: 100%;
+                    border: 0;
+                    background-color: #fafafa;
+                    outline: none;
+                    color: #8f8f8f;
+                    font-size: 26/75rem;
+                }
+            }
+        }
+        //分类
+        .category {
+            .category-top {
+                .nav-list {
+                    position:fixed;
+                    top: 102/75rem;
+                    left: 0;
+                    z-index: 999;
+                    display: flex;
+                    width: 100%;
+                    height: 47/75rem;
+                    background-color: #fafafa;
+                    list-style-type: none;
+                    justify-content: space-around;
+                    li {
+                        color: #666;
+                        font-size: 26/75rem;
+                        &.current {
+                            border-bottom: 4/75rem solid @base-color;
+                            color: @base-color;
+                        }
+                    }
+                }
+
+                #swiper1 {
+                    padding-top: 149/75rem;
+                }
+
+                #swiper2 {
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #999;
+                    }
+                }
+        
+                .my-bullet-active{
+                    background: @base-color;
+                    opacity: 1;
+                  }
+                .icon-link {
+                    width: 100%;
+                    height: 156/75rem;
+                    display: flex;
+                    border-bottom: 2px solid #f9f9f9;
+                    li {
+                        flex:1;
+                    }
+                }
+
+                .news {
+                    display:flex;
+                    align-items: center;
+                    height: 82/75rem;
+                    background-color: #fff;
+                    a {
+                        img {
+                            width: 114/75rem;
+                            margin-left: 22/75rem;
+                        }
+                    }
+                    span {
+                        color: #666;
+                        margin-left: 40/75rem;
+                        margin-right: 22/75rem;
+                    }
+                    p {
+                        font-weight: 700;
+                    }
+                }
+                .content-wrap {
+                    background-color: #fff;
+                    .content-box {
+                        margin-top: 13/75rem;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 526/75rem;
+                        .content-l {
+                            width: 375/75rem;
+                            height: 100%;
+                            a {
+                                img {
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .content-r {
+                            width: 373/75rem;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                        }
+                    }
+                    .ad-box {
+                        width: 100%;
+                        a{
+                            &:first-child {
+                            display: block;
+                            margin-top: 16/75rem;
+                            margin-bottom: 16/75rem;
+                        }
+                    }
+                    }
+                    .sale-box {
+                        margin-top: 2/75rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        .sale-item {
+                            width: 374/75rem;
+                            height: 554/75rem;
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                background-color: #fff;
+                                .text {
+                                    box-sizing: border-box;
+                                    padding-left: 28/75rem;
+                                    padding-top: 28/75rem;
+                                    .title {
+                                        font-size: 26/75rem;
+                                        font-weight: 700;
+                                    }
+                                    .des {
+                                        font-size: 22/75rem;
+                                        color: #878787;
+                                        line-height: 40/75rem;
+                                    }
+                                    .price {
+                                        color: @base-color;
+                                        
+                                        .mark {
+                                            font-size: 20/75rem;
+                                        }
+                                        .num {
+                                            font-size: 28/75rem;
+                                            font-weight: 700;
+                                        }
+                                        .tail {
+                                            font-size: 18/75rem;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                
+            }
+        }
+        
+    }
+
+    //底部tab栏
+    .tab {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 108/75rem;
+        box-sizing: border-box;
+        padding-top: 10/75rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        z-index: 999;
+        li {
+            flex: 1;
+            // height: 100%;
+            // width: auto;
+            
+            a {
+                display: block;
+                // width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-self: center;
+                .tab-icon {
+                    display: block;
+                    width: 60/75rem;
+                    height: 60/75rem;
+                    background: url("../images/sprite.png") 0 0 no-repeat;
+                    background-position-y: -420/75rem;
+                    background-size: 60/75rem;
+                    
+                }
+                p {
+                    color: #666;
+                }
+                
+            }
+            &.current {
+                p {
+                    color: @base-color;
+                }
+                .tab-icon {
+                    background-position-y:-360/75rem;
+                }
+            }
+
+            &:nth-child(2) {
+                a {
+                    .tab-icon {
+                        background-position-y:-60/75rem;
+                    }
+                    
+                    
+                }
+                &.current {
+                    p {
+                        color: @base-color;
+                    }
+                    .tab-icon {
+                        background-position-y:0;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                a {
+                    .tab-icon {
+                        background-position-y:-180/75rem;
+                    }
+                    
+                    
+                }
+                &.current {
+                    p {
+                        color: @base-color;
+                    }
+                    .tab-icon {
+                        background-position-y:-120/75rem;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                a {
+                    .tab-icon {
+                        background-position-y:-300/75rem;
+                    }
+                    
+                    
+                }
+                &.current {
+                    p {
+                        color: @base-color;
+                    }
+                    .tab-icon {
+                        background-position-y:-240/75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
